@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { decode } from "html-entities";
+// import { nanoid } from "nanoid";
+
 export default function QAndA(props) {
   const [optionsList, setOptionsList] = useState([]);
   const [question] = useState(formatData(props.item.question));
@@ -29,7 +31,7 @@ export default function QAndA(props) {
     setOptionsList(options);
   }
 
-  // map through API data fetched to create QAndA components
+  // map through optionsList fetched to create optionElements
   const optionElements = optionsList.map((item) => {
     return (
       <button className="answer" key={item.id} item={item}>
@@ -43,6 +45,10 @@ export default function QAndA(props) {
       <p className="question">{question}</p>
       <div className="answers-container">
         {optionElements}
+        {/* <button className="answer">{optionsList[0]}</button>
+        <button className="answer">{optionsList[1]}</button>
+        <button className="answer">{optionsList[2]}</button>
+        <button className="answer">{optionsList[3]}</button> */}
       </div>
     </div>
   );
