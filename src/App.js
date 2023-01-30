@@ -1,4 +1,5 @@
-import './App.css';
+import { useState, useEffect } from "react";
+import "./App.css";
 export default function App() {
   const [gameStarted, setGameStarted] = useState(false);
   const [triviaData, setTriviaData] = useState([]);
@@ -14,6 +15,11 @@ export default function App() {
       .then((data) => setTriviaData(data.results));
   }, [gameStarted]);
 
+
+  // map through API data fetched to create QAndA components
+  const qAndAElements = triviaData.map((item) => {
+    return <QAndA key={item.id} item={item} gameStarted={gameStarted} />;
+  });
 
   return (
   );
