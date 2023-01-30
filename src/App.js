@@ -12,7 +12,8 @@ export default function App() {
     fetch("https://opentdb.com/api.php?amount=5&difficulty=easy&type=multiple")
       .then((res) => res.json())
       .then((data) => setTriviaData(data.results));
-  }, []);
+  }, [gameStarted]);
+
 
   return (
   );
