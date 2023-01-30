@@ -34,6 +34,18 @@ main {
   background-color: var(--black-color);
 }
 
+.blob-blue {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.blob-yellow {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 /* *************************
 ****************************
 FONTS
