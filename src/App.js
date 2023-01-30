@@ -2,7 +2,10 @@ import { useState, useEffect } from "react";
 import Quiz from "./components/Quiz";
 import QAndA from "./components/QAndA";
 import Start from "./components/Start";
+import Footer from "./components/Footer";
 import "./App.css";
+// import { nanoid } from "nanoid";
+
 export default function App() {
   const [gameStarted, setGameStarted] = useState(false);
   const [triviaData, setTriviaData] = useState([]);
@@ -31,6 +34,7 @@ export default function App() {
       ) : (
         <Start startGame={startGame} />
       )}
+      <Footer />
     </main>
   );
 }
