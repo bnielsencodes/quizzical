@@ -26,6 +26,66 @@ body {
   --black-color: #1c1c1c;
 }
 
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: var(--black-color);
+}
+
+/* *************************
+****************************
+FONTS
+****************************
+************************* */
+
+.start--title,
+.question,
+.footer {
+  font-family: "Karla", sans-serif;
+}
+
+button,
+.start--subtitle {
+  font-family: "Inter", sans-serif;
+}
+
+/* *************************
+****************************
+BUTTON STYLES
+****************************
+************************* */
+
+button {
+  cursor: pointer;
+}
+
+.start--btn,
+.quiz--btn {
+  border: 0;
+  background-color: var(--purple-color);
+  color: var(--ghost-white-color);
+}
+
+.start--btn {
+  width: 193px;
+  height: 52px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+}
+
+.quiz--btn {
+  width: 120px;
+  height: 35px;
+  border-radius: 10px;
+  font-size: 10.24px;
+  font-weight: 600;
+  line-height: 12.39px;
+}
+
   text-align: center;
 }
 
