@@ -29,6 +29,15 @@ export default function QAndA(props) {
     setOptionsList(options);
   }
 
+  // map through API data fetched to create QAndA components
+  const optionElements = optionsList.map((item) => {
+    return (
+      <button className="answer" key={item.id} item={item}>
+        {item}
+      </button>
+    );
+  });
+
   return (
     <div className="q-and-a">
       <p className="question">{question}</p>
