@@ -201,6 +201,22 @@ QUIZ STYLES
   text-align: center;
 }
 
+
+.footer {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.footer a {
+  color: #4d5b9e;
+  text-decoration: none;
+}
+
   }
   }
 }
