@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react";
+import Quiz from "./components/Quiz";
+import QAndA from "./components/QAndA";
+import Start from "./components/Start";
 import "./App.css";
 export default function App() {
   const [gameStarted, setGameStarted] = useState(false);
@@ -22,5 +25,12 @@ export default function App() {
   });
 
   return (
+    <main>
+      {gameStarted ? (
+        <Quiz qAndAElements={qAndAElements} />
+      ) : (
+        <Start startGame={startGame} />
+      )}
+    </main>
   );
 }
