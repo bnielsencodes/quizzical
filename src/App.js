@@ -1,5 +1,6 @@
 import './App.css';
 export default function App() {
+  const [gameStarted, setGameStarted] = useState(false);
   const [triviaData, setTriviaData] = useState([]);
   // fetch data from Open TDB API
   useEffect(() => {
