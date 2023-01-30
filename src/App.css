@@ -217,6 +217,19 @@ QUIZ STYLES
   text-decoration: none;
 }
 
+/* *************************
+****************************
+MEDIA QUERIES
+****************************
+************************* */
+
+@media screen and (min-width: 768px) {
+  .start {
+    height: 550px;
   }
+
+  .quiz {
+    height: 550px;
+    padding: 13px 75px 15px;
   }
 }
