@@ -1,3 +1,31 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --lemony-color: #fffacc;
+  --baby-color: #dbebf9;
+  --dark-purple-color: #293264;
+  --purple-color: #4d5b9e;
+  --light-purple-color: #d8def0;
+  --ghost-white-color: #f5f7fb;
+  --green-color: #94d7a2;
+  --lavender-color: #d6dbf5;
+  --pink-color: #f8bcbc;
+  --black-color: #1c1c1c;
+}
+
   text-align: center;
 }
 
