@@ -41,6 +41,9 @@ export default function QAndA(props) {
   return (
     <div className="q-and-a">
       <p className="question">{question}</p>
+      <div className="answers-container">
+        {optionElements}
+      </div>
     </div>
   );
 }
