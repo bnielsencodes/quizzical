@@ -13,6 +13,11 @@ export default function App() {
     setGameStarted(true);
   }
 
+  // shuffle array function
+  function shuffleArray(arr) {
+    return arr.sort(() => Math.random() - 0.5);
+  }
+
   useEffect(() => {
 
 
