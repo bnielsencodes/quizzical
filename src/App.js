@@ -55,9 +55,22 @@ export default function App() {
   }
 
   // map through API data fetched to create QAndA components
+  const questionElements = questions
+    ? questions.map((item) => {
+        return (
+          <QAndA
+            key={item.id}
+            id={item.id}
+            item={item}
+            selectAnswer={selectAnswer}
+          />
+        );
+      })
+    : [];
 
   return (
       {gameStarted ? (
+        <Quiz questionElements={questionElements} />
       ) : (
         <Start startGame={startGame} />
       )}
