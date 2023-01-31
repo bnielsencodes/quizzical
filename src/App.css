@@ -185,9 +185,10 @@ QUIZ STYLES
   min-width: 66px;
   min-height: 21px;
   padding: 5px 6px;
-  border: 0.79px solid var(--purple-color);
-  border-radius: 7.94px;
-  margin-right: 12.71px;
+  border: 0.8px solid var(--purple-color);
+  border-radius: 8px;
+  margin-right: 12.75px;
+  background-color: transparent;
   color: var(--dark-purple-color);
   font-size: 10.24px;
   font-weight: 500;
@@ -226,4 +227,11 @@ MEDIA QUERIES
     max-width: 750px;
   }
 
+  .question {
+    font-size: 20px;
+  }
+
+  .answer {
+    font-size: 14px;
+  }
 }
