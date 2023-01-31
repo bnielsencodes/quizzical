@@ -155,27 +155,6 @@ QUIZ STYLES
   overflow: clip;
 }
 
-.quiz--yellow-blob {
-  position: absolute;
-  top: -112px;
-  right: -190px;
-  z-index: 0;
-  transform: rotate(71deg);
-  width: 550px;
-  height: 550px;
-}
-
-.quiz--blue-blob {
-  position: absolute;
-  bottom: -255px;
-  right: 350px;
-  z-index: 0;
-  transform: rotate(193deg);
-  width: 550px;
-  width: 550px;
-  height: 550px;
-}
-
 .q-and-a-container {
   margin-bottom: 5px;
 }
@@ -225,7 +204,7 @@ QUIZ STYLES
 }
 
 .footer a {
-  color: #4d5b9e;
+  color: var(--purple-color);
   text-decoration: none;
 }
 
