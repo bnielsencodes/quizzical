@@ -6,6 +6,8 @@ import "./App.css";
 
 export default function App() {
   const [gameStarted, setGameStarted] = useState(false);
+  const [questions, setQuestions] = useState([]);
+  const [newGame, setNewGame] = useState(true);
 
   function startGame() {
     setGameStarted(true);
