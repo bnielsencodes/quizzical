@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Quiz from "./components/Quiz";
 import QAndA from "./components/QAndA";
 import Start from "./components/Start";
+import { nanoid } from "nanoid";
 import "./App.css";
 
 export default function App() {
@@ -9,6 +10,7 @@ export default function App() {
   const [questions, setQuestions] = useState([]);
   const [newGame, setNewGame] = useState(true);
 
+  // start game function
   function startGame() {
     setGameStarted(true);
   }
@@ -69,6 +71,7 @@ export default function App() {
     : [];
 
   return (
+    <main className="app">
       {gameStarted ? (
         <Quiz questionElements={questionElements} />
       ) : (
