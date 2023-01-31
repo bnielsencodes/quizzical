@@ -196,6 +196,10 @@ QUIZ STYLES
   text-align: center;
 }
 
+.answer.selected {
+  border: 0.8px solid var(--lavender-color);
+  background-color: var(--lavender-color);
+}
 
 .footer {
   position: absolute;
