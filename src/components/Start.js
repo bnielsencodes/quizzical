@@ -1,5 +1,6 @@
 import blobBlueStart from "../assets/blob-blue-start.png";
 import blobYellowStart from "../assets/blob-yellow-start.png";
+import Footer from "./Footer";
 
 export default function Start(props) {
   return (
@@ -16,6 +17,7 @@ export default function Start(props) {
         <button className="start--btn" onClick={props.startGame}>
           Start Quiz
         </button>
+        <Footer />
       </div>
     </div>
   );
