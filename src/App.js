@@ -44,6 +44,15 @@ export default function App() {
     getQuestions();
   }, [newGame]);
 
+  function selectAnswer(id, answer) {
+    setQuestions((questions) =>
+      questions.map((question) => {
+        return question.id === id
+          ? { ...question, selected: answer }
+          : question;
+      })
+    );
+  }
 
   // map through API data fetched to create QAndA components
 
