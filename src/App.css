@@ -38,12 +38,14 @@ main {
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: 0;
 }
 
 .blob-yellow {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 0;
 }
 
 /* *************************
@@ -109,7 +111,7 @@ START PAGE STYLES
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 550px;
+  width: 100vw;
   height: 100vh;
   background-color: var(--ghost-white-color);
   text-align: center;
@@ -148,7 +150,7 @@ QUIZ STYLES
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 550px;
+  width: 100vw;
   height: 100vh;
   padding: 13px 40px 15px;
   background-color: var(--ghost-white-color);
@@ -156,6 +158,7 @@ QUIZ STYLES
 }
 
 .q-and-a-container {
+  z-index: 1;
   margin-bottom: 5px;
 }
 
@@ -215,12 +218,12 @@ MEDIA QUERIES
 ************************* */
 
 @media screen and (min-width: 768px) {
-  .start {
-    height: 550px;
-  }
-
   .quiz {
-    height: 550px;
     padding: 13px 75px 15px;
   }
+
+  .q-and-a-container {
+    max-width: 750px;
+  }
+
 }
