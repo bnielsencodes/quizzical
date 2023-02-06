@@ -10,6 +10,11 @@ export default function App() {
   const [questions, setQuestions] = useState([]);
   const [checked, setChecked] = useState(false);
   const [correct, setCorrect] = useState(0);
+  const [gameOptions, setGameOptions] = useState({
+    category: "",
+    difficulty: "",
+    type: "",
+  });
 
   // start game function
   function startGame() {
