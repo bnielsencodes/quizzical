@@ -7,8 +7,6 @@ import Footer from "./Footer";
 export default function Quiz(props) {
   return (
     <div className="quiz">
-      <div className="q-and-a-container">{props.qAndAElements}</div>
-      <button className="quiz--btn">Check Answers</button>
       <img className="blob-blue small" src={blobBlue} alt="blue blob shape" />
       <img
         className="blob-yellow small"
@@ -25,12 +23,20 @@ export default function Quiz(props) {
         src={blobYellowStart}
         alt="yellow blob shape"
       />
+      <div className="q-and-a-container">{props.questionElements}</div>
+      <div className="check-answers">
+        {props.checked && (
+          <span className="score">
+            You scored {props.correct}/5 correct answers
+          </span>
+        )}
         <button
           className="check check-answers--btn"
           onClick={props.checked ? props.newGame : props.checkAnswers}
         >
           {props.checked ? "Play Again" : "Check Answers"}
         </button>
+      </div>
       <Footer />
     </div>
   );
