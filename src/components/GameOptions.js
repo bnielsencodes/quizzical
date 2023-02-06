@@ -48,6 +48,10 @@ export default function GameOptions(props) {
           className="select"
           value={props.gameOptions.difficulty}
         >
+          <option value="">Any Difficulty</option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
         </select>
       </div>
       <div className="select-container">
