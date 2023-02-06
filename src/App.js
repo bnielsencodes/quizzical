@@ -57,6 +57,33 @@ export default function App() {
     );
   }
 
+  function checkAnswers() {
+    let selected = true;
+    questions.forEach((question) => {
+      if (question.selected === null) {
+        selected = false;
+        return;
+      }
+    });
+    if (!selected) {
+      return;
+    }
+    setQuestions((questions) =>
+      questions.map((question) => {
+        return { ...question, checked: true };
+      })
+    );
+    setChecked(true);
+    let correct = 0;
+    console.log(questions);
+    questions.forEach((question) => {
+      if (question.correct === question.selected) {
+        correct += 1;
+      }
+    });
+    setCorrect(correct);
+  }
+
   // map through API data fetched to create QAndA components
   const questionElements = questions
     ? questions.map((item) => {
