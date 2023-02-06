@@ -84,6 +84,11 @@ export default function App() {
     setCorrect(correct);
   }
 
+  function newGame() {
+    setGameStarted(false);
+    setChecked(false);
+  }
+
   // map through API data fetched to create QAndA components
   const questionElements = questions
     ? questions.map((item) => {
