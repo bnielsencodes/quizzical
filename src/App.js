@@ -21,6 +21,16 @@ export default function App() {
     setGameStarted(true);
   }
 
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setGameOptions((prevGameOptions) => {
+      return {
+        ...prevGameOptions,
+        [name]: value,
+      };
+    });
+  };
+
   // shuffle array function
   function shuffleArray(arr) {
     return arr.sort(() => Math.random() - 0.5);
