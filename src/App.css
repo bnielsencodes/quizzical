@@ -30,7 +30,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  min-height: 100vh;
+
   background-color: var(--black-color);
 }
 
@@ -210,10 +211,9 @@ QUIZ styles
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 100vh;
-  padding: 13px 40px 15px;
+  min-height: 100vh;
+  padding: 60px 40px 15px;
   background-color: var(--ghost-white-color);
-  overflow: clip;
 }
 
 .q-and-a-container {
