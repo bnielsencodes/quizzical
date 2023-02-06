@@ -166,6 +166,37 @@ START PAGE styles
   margin: 11px 0 29px;
 }
 
+.game-options {
+  margin: 0 20px 35px;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 17.5px;
+}
+
+.select-label {
+  margin-right: 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.select {
+  width: 180px;
+  height: 40px;
+  padding: 0 16px 0 16px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 0 0.6em 0 rgba(0, 0, 0, 0.2);
+  color: var(--dark-purple-color);
+  font: inherit;
+  cursor: pointer;
+}
+
 /* *************************
 ****************************
 QUIZ styles
@@ -282,6 +313,37 @@ MEDIA QUERIES
   .blob-blue.large,
   .blob-yellow.large {
     display: block;
+  }
+
+  .game-options {
+    margin-bottom: 35px;
+  }
+
+  .select-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 550px;
+    margin-bottom: 17.5px;
+  }
+
+  .select-label {
+    width: 250px;
+    margin-right: 24px;
+    font-size: 1.1em;
+    font-weight: 700;
+  }
+
+  .select {
+    width: 100%;
+    height: 48px;
+    padding: 0 16px 0 16px;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 0 0.6em 0 rgba(0, 0, 0, 0.2);
+    color: var(--dark-purple-color);
+    font: inherit;
+    cursor: pointer;
   }
 
   .quiz {
