@@ -71,7 +71,8 @@ FONTS
 }
 
 button,
-.start--subtitle {
+.start--subtitle,
+.score {
   font-family: "Inter", sans-serif;
 }
 
@@ -190,6 +191,8 @@ QUIZ STYLES
 }
 
 .q-and-a {
+  display: flex;
+  justify-content: space-between;
   border-bottom: 0.79px solid var(--light-purple-color);
   margin-bottom: 15px;
 }
@@ -211,7 +214,7 @@ QUIZ STYLES
   justify-content: center;
   min-width: 66px;
   min-height: 21px;
-  padding: 5px 6px;
+  padding: 5px 8px;
   border: 0.8px solid var(--purple-color);
   border-radius: 8px;
   margin-right: 12.75px;
@@ -226,6 +229,21 @@ QUIZ STYLES
 .answer.selected {
   border: 0.8px solid var(--lavender-color);
   background-color: var(--lavender-color);
+}
+
+.check-answers {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 87%;
+  max-width: 450px;
+}
+
+.score {
+  color: var(--dark-purple-color);
+  font-weight: 700;
+  font-size: 13px;
 }
 
 .footer {
@@ -273,11 +291,16 @@ MEDIA QUERIES
   }
 
   .answer {
+    padding: 6px 8px;
     font-size: 14px;
   }
+
   .check-answers--btn {
     padding: 16px 23px;
     font-size: 14px;
   }
 
+  .score {
+    font-size: 1rem;
+  }
 }
