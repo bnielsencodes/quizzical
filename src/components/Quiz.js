@@ -25,6 +25,12 @@ export default function Quiz(props) {
         src={blobYellowStart}
         alt="yellow blob shape"
       />
+        <button
+          className="check check-answers--btn"
+          onClick={props.checked ? props.newGame : props.checkAnswers}
+        >
+          {props.checked ? "Play Again" : "Check Answers"}
+        </button>
       <Footer />
     </div>
   );
