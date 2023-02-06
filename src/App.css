@@ -48,6 +48,16 @@ main {
   z-index: 0;
 }
 
+.blob-blue.small,
+.blob-yellow.small {
+  display: block;
+}
+
+.blob-blue.large,
+.blob-yellow.large {
+  display: none;
+}
+
 /* *************************
 ****************************
 FONTS
@@ -240,6 +250,16 @@ MEDIA QUERIES
 ************************* */
 
 @media screen and (min-width: 768px) {
+  .blob-blue.small,
+  .blob-yellow.small {
+    display: none;
+  }
+
+  .blob-blue.large,
+  .blob-yellow.large {
+    display: block;
+  }
+
   .quiz {
     padding: 13px 75px 15px;
   }
