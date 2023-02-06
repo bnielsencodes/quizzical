@@ -2,6 +2,7 @@ import blobBlue from "../assets/blob-blue.png";
 import blobYellow from "../assets/blob-yellow.png";
 import blobBlueStart from "../assets/blob-blue-start.png";
 import blobYellowStart from "../assets/blob-yellow-start.png";
+import GameOptions from "./GameOptions";
 import Footer from "./Footer";
 
 export default function Start(props) {
@@ -26,6 +27,10 @@ export default function Start(props) {
       <div className="start--inner-container">
         <h1 className="start--title">Quizzical</h1>
         <h4 className="start--subtitle">How well do you know your trivia?</h4>
+        <GameOptions
+          gameOptions={props.gameOptions}
+          handleChange={props.handleChange}
+        />
         <button className="start--btn" onClick={props.startGame}>
           Start Quiz
         </button>
