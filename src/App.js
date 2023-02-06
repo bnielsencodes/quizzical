@@ -106,7 +106,13 @@ export default function App() {
   return (
     <main>
       {gameStarted ? (
-        <Quiz questionElements={questionElements} />
+        <Quiz
+          questionElements={questionElements}
+          checked={checked}
+          correct={correct}
+          newGame={newGame}
+          checkAnswers={checkAnswers}
+        />
       ) : (
         <Start startGame={startGame} />
       )}
