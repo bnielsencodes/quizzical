@@ -24,10 +24,10 @@ export default function App() {
   // fetch from API, create questionsArr, setQuestions
   useEffect(() => {
     async function getQuestions() {
-      const res = await fetch(
+      const response = await fetch(
         "https://opentdb.com/api.php?amount=5&difficulty=easy&type=multiple&encode=base64"
       );
-      const data = await res.json();
+      const data = await response.json();
       let questionsArr = [];
       data.results.forEach((item) => {
         questionsArr.push({
@@ -45,7 +45,7 @@ export default function App() {
       setQuestions(questionsArr);
     }
     getQuestions();
-  }, [newGame]);
+  }, [gameStarted]);
 
   function selectAnswer(id, answer) {
     setQuestions((questions) =>
