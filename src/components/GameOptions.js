@@ -10,6 +10,7 @@ export default function GameOptions(props) {
           id="category"
           className="select"
           value={props.gameOptions.category}
+          onChange={props.handleChange}
         >
           <option value="">Any Category</option>
           <option value="9">General Knowledge</option>
@@ -47,6 +48,7 @@ export default function GameOptions(props) {
           id="difficulty"
           className="select"
           value={props.gameOptions.difficulty}
+          onChange={props.handleChange}
         >
           <option value="">Any Difficulty</option>
           <option value="easy">Easy</option>
@@ -63,6 +65,7 @@ export default function GameOptions(props) {
           id="type"
           className="select"
           value={props.gameOptions.type}
+          onChange={props.handleChange}
         >
           <option value="">Any Type</option>
           <option value="multiple">Multiple Choice</option>
