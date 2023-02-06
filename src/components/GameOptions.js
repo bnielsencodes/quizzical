@@ -64,6 +64,9 @@ export default function GameOptions(props) {
           className="select"
           value={props.gameOptions.type}
         >
+          <option value="">Any Type</option>
+          <option value="multiple">Multiple Choice</option>
+          <option value="boolean">True / False</option>
         </select>
       </div>
     </div>
