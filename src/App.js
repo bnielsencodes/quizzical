@@ -135,7 +135,11 @@ export default function App() {
           checkAnswers={checkAnswers}
         />
       ) : (
-        <Start startGame={startGame} />
+        <Start
+          startGame={startGame}
+          gameOptions={gameOptions}
+          handleChange={handleChange}
+        />
       )}
     </main>
   );
