@@ -8,7 +8,8 @@ import "./App.css";
 export default function App() {
   const [gameStarted, setGameStarted] = useState(false);
   const [questions, setQuestions] = useState([]);
-  const [newGame, setNewGame] = useState(true);
+  const [checked, setChecked] = useState(false);
+  const [correct, setCorrect] = useState(0);
 
   // start game function
   function startGame() {
