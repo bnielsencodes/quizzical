@@ -17,11 +17,13 @@
 
 #### Desktop
 
-![screenshot of SecurePass desktop website](src/assets/screenshots/desktop.png)
+![screenshot of SecurePass desktop website](src/assets/screenshots/desktop-start.png)
+
+![screenshot of SecurePass desktop website](src/assets/screenshots/desktop-quiz.png)
 
 #### Mobile
 
-<img src="src/assets/screenshots/mobile-start.png" alt="screenshot of Quizzical mobile app" width="300">  <img src="src/assets/screenshots/mobile-quiz.png" alt="screenshot of Quizzical mobile app" width="300">
+<img src="src/assets/screenshots/mobile-start.png" alt="screenshot of Quizzical mobile app" width="300">  <img src="src/assets/screenshots/mobile-quiz.png" alt="screenshot of Quizzical mobile app" width="300"> <img src="src/assets/screenshots/mobile-quiz-scored.png" alt="screenshot of Quizzical mobile app" width="300">
 
 ### Links
 
