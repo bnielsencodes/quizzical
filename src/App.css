@@ -106,7 +106,7 @@ button {
 .check-answers--btn {
   padding: 11px 21px;
   border-radius: 10px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   line-height: 12.39px;
 }
@@ -253,9 +253,9 @@ QUIZ styles
   margin-right: 12.75px;
   background-color: transparent;
   color: var(--dark-purple-color);
-  font-size: 10.24px;
+  font-size: 12px;
   font-weight: 500;
-  line-height: 12.39px;
+  line-height: 12.4px;
   text-align: center;
 }
 
