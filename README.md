@@ -36,6 +36,7 @@
 ### Built with
 
 - [React](https://reactjs.org/) - JS library
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Create React App](https://create-react-app.dev/) - React Build Tool
 - [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 - [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
