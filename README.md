@@ -1,10 +1,12 @@
-# Quizzical - A quiz app that gets data from The Open Trivia Database API
+# Quizzical
+
+#### A quiz app that gets data from The Open Trivia Database API
 
 ## Table of Contents
 
 - [Overview](#overview)
   - [Screenshots](#screenshots)
-  - [Links](#links)
+  - [Link](#link)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Continued development](#continued-development)
@@ -25,24 +27,23 @@
 
 <img src="src/assets/screenshots/mobile-start.png" alt="screenshot of Quizzical mobile app" width="300">  <img src="src/assets/screenshots/mobile-quiz.png" alt="screenshot of Quizzical mobile app" width="300"> <img src="src/assets/screenshots/mobile-quiz-scored.png" alt="screenshot of Quizzical mobile app" width="300">
 
-### Links
+### Link
 
-- Solution URL: [https://github.com/bnielsencodes/quizzical](https://github.com/bnielsencodes/quizzical)
-- Live Site URL: [https://bnielsen.dev/quizzical](https://bnielsen.dev/quizzical)
+- Live Site URL: [https://bnielsencodes.github.io/quizzical](https://bnielsencodes.github.io/quizzical)
 
 ## My Process
 
 ### Built with
 
-- React
-- Create React App
-- Semantic HTML5 markup
-- Flexbox
-- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Create React App](https://create-react-app.dev/) - React Build Tool
+- [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+- [Semantic HTML5 markup](https://www.w3schools.com/html/html5_semantic_elements.asp)
+- [Mobile-first workflow](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
+- [VS Code](https://code.visualstudio.com/) - Integrated development environment
 
 ### Continued development
 
-- ~~Add the ability to choose between categories, levels of difficulty, and types of questions~~
 - Add confetti on 5/5 questions scored correctly
 
 ### Useful Resources
@@ -51,7 +52,7 @@
 
 ## Author
 
-- Website - [Brandon Nielsen](https://www.bnielsen.dev)
-- LinkedIn - [Brandon Nielsen](https://www.linkedin.com/in/bnielsencodes)
+- Portfolio Website - [bnielsen.dev](https://bnielsen.dev)
+- LinkedIn - [/in/bnielsencodes](https://linkedin.com/in/bnielsencodes)
 - Twitter - [@bnielsencodes](https://twitter.com/bnielsencodes)
 - Frontend Mentor - [@bnielsencodes](https://www.frontendmentor.io/profile/bnielsencodes)
