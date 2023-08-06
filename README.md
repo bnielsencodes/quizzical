@@ -37,6 +37,7 @@
 
 - [React](https://reactjs.org/) - JS library
 - [Create React App](https://create-react-app.dev/) - React Build Tool
+- [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 - [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
 - [Semantic HTML5 markup](https://www.w3schools.com/html/html5_semantic_elements.asp)
 - [Mobile-first workflow](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
