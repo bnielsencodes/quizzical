@@ -47,7 +47,7 @@
 ### Useful Resources
 
 - Font Awesome for correct/incorrect icons - [Font Awesome](https://www.fontawesome.com)
-  [Stop useEffect from rerendering due to function used in dependencies](https://stackoverflow.com/questions/56492261/the-function-makes-the-dependencies-of-useeffect-hook)
+- [Stop useEffect from rerendering due to function used in dependencies](https://stackoverflow.com/questions/56492261/the-function-makes-the-dependencies-of-useeffect-hook)
 
 ## Author
 
