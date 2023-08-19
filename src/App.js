@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
+import Confetti from "react-confetti";
 import Quiz from "./components/Quiz";
 import QAndA from "./components/QAndA";
 import Start from "./components/Start";
@@ -11,6 +12,7 @@ export default function App() {
   const [questions, setQuestions] = useState([]);
   const [checked, setChecked] = useState(false);
   const [correct, setCorrect] = useState(0);
+  const [allCorrect, setAllCorrect] = useState(false);
   const [gameOptions, setGameOptions] = useState({
     category: "",
     difficulty: "",
@@ -25,6 +27,7 @@ export default function App() {
   const playAgain = useCallback(() => {
     setGameStarted(false);
     setChecked(false);
+    setAllCorrect(false);
   }, []);
 
   const handleChange = (event) => {
@@ -109,6 +112,7 @@ export default function App() {
       }
     });
     setCorrect(correct);
+    setAllCorrect(correct === 5);
   }
 
   // map through API data fetched to create QAndA components
@@ -128,6 +132,7 @@ export default function App() {
 
   return (
     <main>
+      {allCorrect && <Confetti />}
       {gameStarted ? (
         <Quiz
           questionElements={questionElements}
