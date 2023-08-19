@@ -9,7 +9,6 @@
   - [Link](#link)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -39,14 +38,11 @@
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Create React App](https://create-react-app.dev/) - React Build Tool
 - [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+- [React Confetti](https://www.npmjs.com/package/react-confetti)
 - [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
 - [Semantic HTML5 markup](https://www.w3schools.com/html/html5_semantic_elements.asp)
 - [Mobile-first workflow](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
 - [VS Code](https://code.visualstudio.com/) - Integrated development environment
-
-### Continued development
-
-- Add confetti on 5/5 questions scored correctly
 
 ### Useful Resources
 
