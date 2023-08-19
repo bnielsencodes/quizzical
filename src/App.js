@@ -66,7 +66,7 @@ export default function App() {
       setQuestions(questionsArr);
     }
     getQuestions();
-  }, [gameStarted, gameOptions]);
+  }, [setGameStarted, gameOptions]);
 
   function selectAnswer(id, answer) {
     setQuestions((questions) =>
