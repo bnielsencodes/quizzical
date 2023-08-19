@@ -32,7 +32,7 @@ export default function Quiz(props) {
         )}
         <button
           className="check check-answers--btn"
-          onClick={props.checked ? props.newGame : props.checkAnswers}
+          onClick={props.checked ? props.playAgain : props.checkAnswers}
         >
           {props.checked ? "Play Again" : "Check Answers"}
         </button>

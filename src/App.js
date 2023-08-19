@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Quiz from "./components/Quiz";
 import QAndA from "./components/QAndA";
 import Start from "./components/Start";
@@ -6,6 +6,7 @@ import { nanoid } from "nanoid";
 import "./App.css";
 
 export default function App() {
+  // const [newGame, setNewGame] = useState(true);
   const [gameStarted, setGameStarted] = useState(false);
   const [questions, setQuestions] = useState([]);
   const [checked, setChecked] = useState(false);
@@ -16,10 +17,15 @@ export default function App() {
     type: "",
   });
 
-  // start game function
-  function startGame() {
+  const startGame = useCallback(() => {
     setGameStarted(true);
-  }
+    setQuestions([]);
+  }, []);
+
+  const playAgain = useCallback(() => {
+    setGameStarted(false);
+    setChecked(false);
+  }, []);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -66,7 +72,7 @@ export default function App() {
       setQuestions(questionsArr);
     }
     getQuestions();
-  }, [setGameStarted, gameOptions]);
+  }, [gameStarted, gameOptions]);
 
   function selectAnswer(id, answer) {
     setQuestions((questions) =>
@@ -105,11 +111,6 @@ export default function App() {
     setCorrect(correct);
   }
 
-  function newGame() {
-    setGameStarted(false);
-    setChecked(false);
-  }
-
   // map through API data fetched to create QAndA components
   const questionElements = questions
     ? questions.map((item) => {
@@ -131,7 +132,7 @@ export default function App() {
           questionElements={questionElements}
           checked={checked}
           correct={correct}
-          newGame={newGame}
+          playAgain={playAgain}
           checkAnswers={checkAnswers}
         />
       ) : (
