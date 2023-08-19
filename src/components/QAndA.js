@@ -28,9 +28,9 @@ export default function QAndA(props) {
       <button
         key={nanoid()}
         id={id}
-        className={
+        className={`${
           answer === props.item.selected ? "answer selected" : "answer"
-        }
+        } ${!props.checked ? "hover" : null}`}
         onClick={() => handleSelectAnswer(answer)}
       >
         {atob(answer)}

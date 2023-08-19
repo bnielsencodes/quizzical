@@ -120,6 +120,7 @@ export default function App() {
             id={item.id}
             item={item}
             selectAnswer={selectAnswer}
+            checked={checked}
           />
         );
       })
