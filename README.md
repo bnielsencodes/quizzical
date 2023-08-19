@@ -1,6 +1,6 @@
 # Quizzical
 
-#### A quiz app that gets data from The Open Trivia Database API
+A quiz app that gets data from The Open Trivia Database API
 
 ## Table of Contents
 
