@@ -25,7 +25,7 @@
 
 #### Mobile
 
-<img src="src/assets/screenshots/mobile-start.png" alt="screenshot of Quizzical mobile app" width="300">  <img src="src/assets/screenshots/mobile-quiz.png" alt="screenshot of Quizzical mobile app" width="300"> <img src="src/assets/screenshots/mobile-quiz-scored.png" alt="screenshot of Quizzical mobile app" width="300">
+<img src="src/assets/screenshots/mobile-start.png" alt="screenshot of Quizzical mobile app" width="300"> <img src="src/assets/screenshots/mobile-quiz.png" alt="screenshot of Quizzical mobile app" width="300"> <img src="src/assets/screenshots/mobile-quiz-scored.png" alt="screenshot of Quizzical mobile app" width="300">
 
 ### Link
 
@@ -51,6 +51,7 @@
 ### Useful Resources
 
 - Font Awesome for correct/incorrect icons - [Font Awesome](https://www.fontawesome.com)
+  [Stop useEffect from rerendering due to function used in dependencies](https://stackoverflow.com/questions/56492261/the-function-makes-the-dependencies-of-useeffect-hook)
 
 ## Author
 
